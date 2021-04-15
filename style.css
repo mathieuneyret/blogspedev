@@ -5,17 +5,17 @@ h1 {
     margin-bottom: 5%;
 }
 
-.blockEvenement {
+#blockEvenement {
     display: flex;
 }
 
-.firstEvenement {
+/* .firstEvenement {
     flex: 1;
 }
 
 .secondEvenement {
     flex: 1;
-}
+} */
 
 .titleEvenement {
     color: rgb(197, 18, 18);
@@ -23,7 +23,7 @@ h1 {
     font-style: oblique;
 }
 
-.blockEvenement p {
+#blockEvenement p {
     text-align: justify;
     width: 90%;
     padding-left: 5%;
