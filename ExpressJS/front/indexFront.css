@@ -1,0 +1,48 @@
+h1 {
+    text-align: center;
+    color: rgb(14, 93, 167);
+    text-decoration: underline;
+    margin-bottom: 5%;
+}
+
+#blockEvenement {
+    display: flex;
+}
+
+/* .firstEvenement {
+    flex: 1;
+}
+
+.secondEvenement {
+    flex: 1;
+} */
+
+.titleEvenement {
+    color: rgb(197, 18, 18);
+    text-align: center;
+    font-style: oblique;
+}
+
+#blockEvenement p {
+    text-align: justify;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.thirdEvenement p {
+    text-align: justify;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.blockDate p span{
+    font-weight: bold;
+}
+
+.urlImage img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
