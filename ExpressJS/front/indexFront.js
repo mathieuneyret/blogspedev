@@ -5,7 +5,7 @@ function traiterSuccesFetch(reponse) {
     console.log(reponse);
     for(var i=0;i<reponse.length;i++){
         // Boucle qui va chercher tout les éléments du Array de la requête JSON et les afficher
-        // dans des div (titre, description, date du début, date de la fin)
+        // dans des div (titre, description, date du début, date de la fin, image)
         document.getElementById("blockEvenement").innerHTML += `
         <div>
             <h2 class="titleEvenement">${reponse[i].titre}</h2>
@@ -20,11 +20,28 @@ function traiterSuccesFetch(reponse) {
                     <p><span> Date de fin : </span> ${reponse[i].dateHeureFin} </p>
                 </div>
             </div>
+            <div class="urlImage">
+                <p>
+                    <img src="${reponse[i].image}">
+                </p>
+            </div>
+            <button type="button" onclick="buttonSupp('${reponse[i].id}')"> Supprimer évènement </button>
         </div>
         `;
     }
 }
-  
+
+// fonction pour supprimer un évènement
+function buttonSupp(suppreponse) {
+    fetch("http://localhost:3000/events/" + suppreponse, {
+        method: 'DELETE',
+    })
+        .then(res => res.json())
+        .then(res => console.log(res))
+    // var supprimer = suppreponse.indexOf('3');
+    // alert(supprimer);
+}
+
 function traiterErreurFetch(erreur) {
     // Fonction qui va s'éxecuter si il y a une erreur dans la requête Fetch et/ou JSON
     console.log("erreur");
