@@ -9,14 +9,6 @@ h1 {
     display: flex;
 }
 
-/* .firstEvenement {
-    flex: 1;
-}
-
-.secondEvenement {
-    flex: 1;
-} */
-
 .titleEvenement {
     color: rgb(197, 18, 18);
     text-align: center;
