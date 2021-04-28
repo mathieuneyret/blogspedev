@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="indexFront.css" rel="stylesheet">
+
+    <script type="text/javascript" src="indexFront.js" defer></script>
+
+</head>
+<body>
+
+    <div id="blockEvenement">
+
+    </div>
+
+    <br><br><br><br>
+
+    <form id="formEvent">
+            <div>
+                <label for="title"> Titre de l'évènement : </label>
+                <input type="text" name="titre" id="Titre" required>
+            </div>
+            <br>
+            <div>
+                <label for="description"> Description de l'évènement : </label>
+                <textarea name="description" id="Description"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="dateHeureDebut"> Chosir une date de début </label>
+                <input type="date" name"dateHeureDebut" id="DateDebut" required>
+            </div>
+            <br>
+            <div>
+                <label for="dateHeureFin"> Choisir une date de fin </label>
+                <input type="date" name="dateHeureFin" id="DateFin" required>
+            </div>
+            <br>
+            <div>
+                <label for="image"> Choisir l'URL d'une image </label>
+                <textarea name="image" id="Image"></textarea>
+            </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
